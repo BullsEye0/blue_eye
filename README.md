@@ -22,7 +22,7 @@ https://account.shodan.io/register
 * List of possible company email addresses harvested from GitHub user pages and from DuckDuckGo and Linkedin searches.
 * Subdomain resolves to the IP addresses.
 
-![Screenshot](banners.png)
+![Screenshot](banner.png)
 
 # Video Blue Eye on YouTube:
 
