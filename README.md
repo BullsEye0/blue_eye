@@ -21,7 +21,7 @@ https://account.shodan.io/register
 * List of possible company email addresses harvested from GitHub user pages and from DuckDuckGo and Linkedin searches.
 * Subdomain resolves to the IP addresses.
 
-![Screenshot](banner.png)
+![Screenshot](banners.png)
 
 I made this script in python 2.7 
 (Later I can - I will change this to python 3) But for now I think python 2 is nicer, more beautiful and better. "It's kind of personal" :-)
