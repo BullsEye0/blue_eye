@@ -24,6 +24,11 @@ https://account.shodan.io/register
 
 ![Screenshot](banners.png)
 
+# Video Blue Eye on YouTube:
+
+https://youtu.be/gWhK_iryM64
+
+
 I made this script in python 2.7 
 (Later I can - I will change this to python 3) But for now I think python 2 is nicer, more beautiful and better. "It's kind of personal" :-)
 
