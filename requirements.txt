@@ -1,0 +1,4 @@
+dnspython
+requests
+shodan
+socket
