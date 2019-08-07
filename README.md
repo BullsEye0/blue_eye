@@ -3,11 +3,13 @@ Blue Eye is a python Recon Toolkit script. It shows Shodan info, ports and heade
 
 To run Blue Eye, all it takes is a domain and company name when prompted.
 
+
 # Shodan
 For additional data gathering, you can enter a Shodan API key when prompted.
 Blue Eye will show the company's data, the open ports. It also shows you the Headers, on which you can determine whether they are vulnerable.
 A Shodan API key can be found here: 
 https://account.shodan.io/register
+
 
 # Furthermore it shows the:
 
@@ -24,11 +26,15 @@ https://account.shodan.io/register
 I made this script in python 2.7 
 (Later I can - I will change this to python 3) But for now I think python 2 is nicer, more beautiful and better. "It's kind of personal" :-)
 
+
 # Install Blue Eye on Linux:
 
 git clone https://github.com/BullsEye0/blue_eye.git
+
 cd blue_eye
+
 pip install -r requirements.txt
+
 
 # Use:
 python3 blue_eye.py
