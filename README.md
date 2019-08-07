@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 
 # Use:
-python3 blue_eye.py
+python blue_eye.py
 
 (You will be asked for a Shodan API key.
 But this is not necessarily)
