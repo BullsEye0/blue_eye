@@ -7,6 +7,7 @@ To run Blue Eye, all it takes is a domain and company name when prompted.
 # Shodan
 For additional data gathering, you can enter a Shodan API key when prompted.
 Blue Eye will show the company's data, the open ports. It also shows you the Headers, on which you can determine whether they are vulnerable.
+
 A Shodan API key can be found here: 
 https://account.shodan.io/register
 
