@@ -29,6 +29,8 @@ https://account.shodan.io/register
 https://youtu.be/gWhK_iryM64
 
 
+# Python:
+
 I made this script in python 2.7 
 (Later I can - I will change this to python 3) But for now I think python 2 is nicer, more beautiful and better. "It's kind of personal" :-)
 
