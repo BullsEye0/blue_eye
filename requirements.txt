@@ -1,6 +1,6 @@
 dnspython
-re
+regex
 requests
 shodan
-socket
-time
+sockets
+times
