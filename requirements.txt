@@ -1,6 +1,3 @@
 dnspython
-re
 requests
 shodan
-socket
-time
