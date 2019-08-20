@@ -12,7 +12,7 @@ A Shodan API key can be found here:
 https://account.shodan.io/register
 
 
-# Furthermore it shows the:
+## Furthermore it shows the:
 
 * Mail Servers.
 * DNS Text Records.
@@ -24,18 +24,18 @@ https://account.shodan.io/register
 
 ![Screenshot](banner.png)
 
-# Video Blue Eye on YouTube:
+## Video Blue Eye on YouTube:
 
 https://youtu.be/gWhK_iryM64
 
 
-# Python:
+## Python:
 
 I made this script in python 2.7 
 (Later I can - I will change this to python 3) But for now I think python 2 is nicer, more beautiful and better. "It's kind of personal" 😃
 
 
-# Install Blue Eye on Linux:
+## Install Blue Eye on Linux:
 
 git clone https://github.com/BullsEye0/blue_eye.git
 
@@ -44,15 +44,15 @@ cd blue_eye
 pip install -r requirements.txt
 
 
-# Use:
+## Use:
 python blue_eye.py
 
 (You will be asked for a Shodan API key.
 But this is not necessarily)
 
 Have fun ..! 😃
-****
-# Contact to coder
+
+## Contact to coder
 Social Networks - Connect
 
 Facebook: https://www.facebook.com/jolandadekoff
@@ -64,6 +64,6 @@ Youtube: https://youtu.be/XCtWM-4ov2U
 Facebook Page: https://www.facebook.com/ethical.hack.group
 
 Facebook Group: https://www.facebook.com/groups/ethicalhacking.hacker
-****
-# Donation Button LiberaPay:
+
+## Donation Button LiberaPay:
 <noscript><a href="https://liberapay.com/BullsEye/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
