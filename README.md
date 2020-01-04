@@ -6,13 +6,21 @@ To run Blue Eye, all it takes is a domain and company name when prompted.
 ## Blue Eye shows the:
 
 ✓ Subdomain resolves to the IP addresses
+
 ✓ Ports
+
 ✓ HTTP Header
+
 ✓ Mail Servers
+
 ✓ DNS Text Records
+
 ✓ Nameserver Records
+
 ✓ Sites of interest "email, okta, webmail and slack"
+
 ✓ List of GitHub user pages
+
 ✓ List of possible company email addresses harvested from GitHub user pages and from DuckDuckGo and Linkedin searches
 
 ![Screenshot](banner.png)
