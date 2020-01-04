@@ -43,7 +43,9 @@ pip3 install -r requirements.txt
 python3 blue_eye.py
 
 Have fun ..! 😃
-
+****
+![Screenshot](img/Blue2.png)
+****
 # Contact to coder
 Social Networks - Connect
 
