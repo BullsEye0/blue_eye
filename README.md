@@ -23,7 +23,7 @@ To run Blue Eye, all it takes is a domain and company name when prompted.
 
 ✓ List of possible company email addresses harvested from GitHub user pages and from DuckDuckGo and Linkedin searches
 
-![Screenshot](Blue1.png)
+![Screenshot](img/Blue1.png)
 
 ## Video Blue Eye on YouTube:
 
