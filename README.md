@@ -4,8 +4,10 @@ Blue Eye is a python Recon Toolkit script. It shows subdomain resolves to the IP
 To run Blue Eye, all it takes is a domain and company name when prompted.
 ****
 **Here is an srticle  i wrote about Blue Eye:**
+
 https://hackingpassion.com/blue-eye-a-python-recon-toolkit/
 
+****
 ## Blue Eye shows the:
 
 ✓ Subdomain resolves to the IP addresses
