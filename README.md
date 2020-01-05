@@ -22,8 +22,6 @@ https://hackingpassion.com/blue-eye-a-python-recon-toolkit/
 
 ✓ Nameserver Records
 
-✓ Sites of interest "email, okta, webmail and slack"
-
 ✓ List of GitHub user pages
 
 ✓ List of possible company email addresses harvested from GitHub user pages and from DuckDuckGo and Linkedin searches
