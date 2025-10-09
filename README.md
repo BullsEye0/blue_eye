@@ -31,7 +31,7 @@ https://hackingpassion.com/blue-eye-a-python-recon-toolkit/
 
 ****
 
-## 🎯 What's New in v2.1 Extended
+## 🎯 What's New in v2.1
 
 **Three powerful new features:**
 
@@ -43,7 +43,7 @@ https://hackingpassion.com/blue-eye-a-python-recon-toolkit/
 
 ## 📊 Professional HTML Report
 
-Blue Eye automatically generates beautiful, professional HTML reports with all your reconnaissance data:
+Blue Eye automatically generates beautiful, HTML reports with all your reconnaissance data:
 
 ![Blue Eye HTML Report](img/report.png)
 
@@ -100,7 +100,7 @@ Have fun ..! 😃
 ****
 
 ## I also want to make you aware that:
-* This was written for educational purposes and pentest only.
+* This was written for educational purposes and penetration testing only.
 * The author will not be responsible for any damage ..!
 * The author of this tool is not responsible for any misuse of the information.
 * You will not misuse the information to gain unauthorized access.
