@@ -83,7 +83,6 @@ company = target.partition(".")
 comp = company[0]
 time.sleep(1)
 
-# Initialize report data
 report_data['target'] = target
 report_data['scan_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -110,7 +109,6 @@ def jan():
         print ("»"*60 + "\n")
         time.sleep(1)
         
-        # Store for report
         report_data['ip_info'] = jso
 
     except Exception:
@@ -192,7 +190,6 @@ def aug():
     
     print ("\n" + "»" * 60)
     
-    # Store for report
     report_data['dns_records'] = {
         'mx': mx_records,
         'txt': txt_records,
@@ -242,12 +239,9 @@ def june():
                 
                 for item in json_data:
                     if 'name_value' in item:
-                        # Split on newlines as crt.sh can return multiple domains per entry
                         domains = item['name_value'].split('\n')
                         for domain in domains:
-                            # Clean up the domain
                             domain = domain.strip()
-                            # Remove wildcard asterisks for DNS resolution
                             if domain.startswith('*.'):
                                 domain = domain[2:]
                             if domain and domain not in babs:
@@ -304,7 +298,6 @@ def sept():
     print ("[+]\033[34m - --> \033[0mThis may take a moment \033[34mBlue Eye\033[0m gathers the data.....\n")
     time.sleep(1)
     
-    # Common subdomains to check
     subdomains = [
         'www', 'mail', 'ftp', 'localhost', 'webmail', 'smtp', 'pop', 'ns1', 'webdisk',
         'ns2', 'cpanel', 'whm', 'autodiscover', 'autoconfig', 'admin', 'api', 'dev',
@@ -332,7 +325,6 @@ def sept():
     print ("»"*60 + "\n")
     time.sleep(1)
     
-    # Store for report
     report_data['subdomains'] = found_subdomains
 
 
@@ -351,21 +343,18 @@ def okt():
         
         technologies = []
         
-        # Check Server header
         if 'server' in headers:
             server = headers['server']
             technologies.append({'type': 'Web Server', 'name': server})
             print ("\t[+] \033[34mWeb Server: " + server + "\033[0m")
             time.sleep(0.2)
         
-        # Check X-Powered-By header
         if 'x-powered-by' in headers:
             powered = headers['x-powered-by']
             technologies.append({'type': 'Powered By', 'name': powered})
             print ("\t[+] \033[34mPowered By: " + powered + "\033[0m")
             time.sleep(0.2)
         
-        # Check for common frameworks/CMS in HTML
         detections = {
             'WordPress': ['wp-content', 'wp-includes'],
             'Joomla': ['joomla', '/components/com_'],
@@ -390,7 +379,6 @@ def okt():
                     time.sleep(0.2)
                     break
         
-        # Check for CDN
         if 'cf-ray' in headers:
             technologies.append({'type': 'CDN', 'name': 'Cloudflare'})
             print ("\t[+] \033[34mCDN: Cloudflare\033[0m")
@@ -403,7 +391,6 @@ def okt():
         print ("»"*60 + "\n")
         time.sleep(1)
         
-        # Store for report
         report_data['technologies'] = technologies
         
     except Exception as e:
@@ -625,7 +612,7 @@ def nov():
 <body>
     <div class="container">
         <div class="header">
-            <h1>🔍 Blue Eye Recon Report</h1>
+            <h1>Blue Eye Recon Report</h1>
             <div class="subtitle">Professional OSINT Reconnaissance Report</div>
             <div style="margin-top: 20px;">
                 <span class="badge">Target: {report_data['target']}</span>
@@ -635,7 +622,7 @@ def nov():
 
         <!-- IP Information -->
         <div class="section">
-            <h2>🌐 IP & Geolocation Information</h2>
+            <h2>IP & Geolocation Information</h2>
             <div class="info-grid">
 """
         
@@ -674,7 +661,7 @@ def nov():
 
         <!-- Subdomains -->
         <div class="section">
-            <h2>🔎 Discovered Subdomains</h2>
+            <h2>Discovered Subdomains</h2>
 """
         
         if report_data['subdomains']:
@@ -690,7 +677,7 @@ def nov():
 
         <!-- Technologies -->
         <div class="section">
-            <h2>🛠️ Detected Technologies</h2>
+            <h2>Detected Technologies</h2>
 """
         
         if report_data['technologies']:
@@ -706,7 +693,7 @@ def nov():
 
         <!-- DNS Records -->
         <div class="section">
-            <h2>📋 DNS Records</h2>
+            <h2>DNS Records</h2>
 """
         
         if report_data['dns_records']:
@@ -731,7 +718,7 @@ def nov():
         if report_data['github_users']:
             html_content += f"""
         <div class="section">
-            <h2>👥 GitHub Users</h2>
+            <h2>GitHub Users</h2>
             <p>Total found: <span class='highlight'>{len(report_data['github_users'])}</span></p>
             <ul>
 """
@@ -742,11 +729,10 @@ def nov():
         </div>
 """
         
-        # Emails
         if report_data['emails']:
             html_content += f"""
         <div class="section">
-            <h2>📧 Discovered Email Addresses</h2>
+            <h2>Discovered Email Addresses</h2>
             <p>Total found: <span class='highlight'>{len(report_data['emails'])}</span></p>
             <ul>
 """
@@ -766,10 +752,10 @@ def nov():
                 <a href="https://github.com/BullsEye0" style="color: #667eea;">GitHub</a>
             </p>
             <p style="margin-top: 15px; font-size: 0.9em;">
-                <span class="emoji">🎯</span> Want to master OSINT & Reconnaissance? <br>
+                <span class="emoji">🎯</span> Want to learn OSINT & Reconnaissance? <br>
                 <a href="https://www.udemy.com/course/ethical-hacking-complete-course-zero-to-expert/?couponCode=BULLSEYE" 
                    style="color: #667eea; font-weight: bold;">
-                   Get the full Ethical Hacking Course – Zero to Expert
+                   Get the full Ethical Hacking Complete Course Zero to Expert
                 </a>
             </p>
             <p style="margin-top: 20px; color: #a8b3ff;">
@@ -781,7 +767,6 @@ def nov():
 </html>
 """
         
-        # Write to file
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(html_content)
         
@@ -805,10 +790,10 @@ if __name__ == "__main__":
     nmaps()
     aug()
     june()
-    sept()      # NEW: Subdomain scanner
-    okt()       # NEW: Technology detection
+    sept()
+    okt()
     list_users()
     mails()
-    nov()       # NEW: HTML report generator
+    nov()
     
     print ("\n\n\t\033[34m[!] Scan complete! Check your HTML report! 📄\033[0m 😃\n\n")
