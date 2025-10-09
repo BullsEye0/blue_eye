@@ -41,6 +41,16 @@ https://hackingpassion.com/blue-eye-a-python-recon-toolkit/
 
 ****
 
+## 📊 Professional HTML Report
+
+Blue Eye automatically generates beautiful, professional HTML reports with all your reconnaissance data:
+
+![Blue Eye HTML Report](img/report.png)
+
+The report includes everything discovered during the scan — ready to share or save! 🎯
+
+****
+
 ## Installation Steps:
 
 1. **Clone the repository:**
