@@ -41,11 +41,6 @@ https://hackingpassion.com/blue-eye-a-python-recon-toolkit/
 
 ****
 
-## Video Blue Eye on YouTube:
-https://youtu.be/gWhK_iryM64
-
-****
-
 ## Installation Steps:
 
 1. **Clone the repository:**
